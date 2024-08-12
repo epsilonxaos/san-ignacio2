@@ -1,0 +1,47 @@
+{
+	"compilerOptions": {
+		"allowImportingTsExtensions": true,
+		"allowJs": true,
+		"allowUnreachableCode": false,
+		"alwaysStrict": true,
+		"baseUrl": ".",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"noEmit": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "dist",
+		"paths": {
+			"#types/*": ["src/types/*"],
+			"@assets/*": ["src/assets/*"],
+			"@components/*": ["src/components/*"],
+			"@contexts/*": ["src/contexts/*"],
+			"@modules/*": ["src/modules/*"],
+			"@pages/*": ["src/pages/*"],
+			"@routes/*": ["src/routes/*"],
+			"@services/*": ["src/services/*"],
+			"@utils/*": ["src/utils/*"]
+		},
+		"removeComments": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"sourceRoot": "/src",
+		"strict": true,
+		"strictNullChecks": true,
+		"target": "ES2022",
+		"typeRoots": ["node_modules/@types", "src/types", "node_modules"],
+		"types": ["node"]
+	},
+	"exclude": ["node_modules"],
+	"include": ["src"],
+	"ts-node": {
+		"require": ["tsconfig-paths/register"]
+	}
+}

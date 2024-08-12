@@ -1,0 +1,43 @@
+module.exports = {
+	root: true,
+	env: { browser: true, es2020: true },
+	extends: [
+		'eslint:recommended',
+		'plugin:react/recommended',
+		'plugin:react/jsx-runtime',
+		'plugin:react-hooks/recommended',
+		'prettier',
+		'plugin:json/recommended',
+	],
+	ignorePatterns: ['dist', '.eslintrc.cjs'],
+	parserOptions: {
+		ecmaFeatures: {
+			jsx: true,
+			modules: true,
+		},
+		ecmaVersion: 'latest',
+		sourceType: 'module',
+	},
+
+	settings: { react: { version: '18.2' } },
+	plugins: ['react-refresh'],
+	rules: {
+		'react/jsx-no-target-blank': 'off',
+		'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+		eqeqeq: 0,
+		'no-undef': 0,
+		'one-var': 0,
+		'prefer-double': 0,
+		'react/button-has-type': 0,
+		'react/display-name': 0,
+		'react/jsx-indent': 0,
+		'react/jsx-indent-props': 0,
+		'react/jsx-no-bind': 0,
+		'react/jsx-no-undef': 1,
+		'react/jsx-no-useless-fragment': 1,
+		'react/jsx-pascal-case': 1,
+		'react/prop-types': 0,
+		'react/react-in-jsx-scope': 0,
+		'react/style-prop-object': 1,
+	},
+}
