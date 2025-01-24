@@ -36,9 +36,9 @@ export type TEventStateApp = {}
 export type TEventActionApp = Partial<TEventStateApp>
 
 export type TButtonParams = {
-	text: string
+	children: ReactNode
 	type?: THTMLButtonTypeAttribute
-	className?: string
+	className?: TClassName
 	onClick?: () => void
 }
 
