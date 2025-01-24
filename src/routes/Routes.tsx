@@ -1,6 +1,5 @@
-
+import Index from '@pages/home/Index'
 import { Route, Switch } from 'wouter'
-import Index from '@pages/Index'
 
 const Routes = () => {
 	return (
