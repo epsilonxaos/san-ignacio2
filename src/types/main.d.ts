@@ -46,3 +46,17 @@ export type TTexts = {
 	children: ReactNode
 	className?: string
 }
+
+export type TClassName = string | string[] | undefined
+
+export interface TextProps {
+	children: ReactNode
+	className?: TClassName
+	parseHtml?: boolean
+}
+
+export interface TitleProps {
+	children: ReactNode | string
+	className?: TClassName
+	parseHtml?: boolean
+}
