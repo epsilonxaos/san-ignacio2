@@ -1,4 +1,4 @@
-import About from '@pages/home/about'
+import About from '@pages/About'
 
 const Index = () => {
 	return (
