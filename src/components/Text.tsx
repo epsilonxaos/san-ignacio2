@@ -7,18 +7,32 @@ import parse from 'html-react-parser'
 const Text = ({ children, className, parseHtml }: TextProps) => {
 	if (parseHtml && !children) return null
 
-	if (parseHtml) return <div className={cn('mb-4 text-sm', className)}>{parse(children as string)}</div>
+	if (parseHtml)
+		return (
+			<div className={cn('text-verde-oscuro mb-4 text-sm font-thin md:text-base', className)}>
+				{parse(children as string)}
+			</div>
+		)
 
-	return <p className={cn('mb-4 text-sm', className)}>{children}</p>
+	return <p className={cn('text-verde-oscuro mb-4 text-sm font-thin md:text-base', className)}>{children}</p>
 }
 
 const Title = ({ children, className, parseHtml }: TitleProps) => {
 	if (parseHtml && !children) return null
 
 	if (parseHtml)
-		return <div className={cn('mb-8 text-lg font-bold md:text-xl', className)}>{parse(children as string)}</div>
+		return (
+			<div
+				className={cn('text-verde-oscuro mb-8 text-base font-thin uppercase lg:text-3xl lg:tracking-wider', className)}>
+				{parse(children as string)}
+			</div>
+		)
 
-	return <h3 className={cn('mb-8 text-lg font-bold md:text-xl', className)}>{children}</h3>
+	return (
+		<h3 className={cn('text-verde-oscuro mb-8 text-base font-thin uppercase lg:text-3xl lg:tracking-wider', className)}>
+			{children}
+		</h3>
+	)
 }
 
 Text.Title = Title
