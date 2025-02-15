@@ -12,5 +12,5 @@
 
 body,
 html {
-	@apply bg-white;
+	@apply font-america bg-gris;
 }

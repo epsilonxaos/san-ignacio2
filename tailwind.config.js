@@ -14,7 +14,7 @@ export default {
 				america: ['GT America', 'sans-serif'],
 			},
 			maxWidth: {
-				section: '1440px',
+				section: '1600px',
 			},
 		},
 	},
