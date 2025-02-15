@@ -9,12 +9,12 @@ const Text = ({ children, className, parseHtml }: TextProps) => {
 
 	if (parseHtml)
 		return (
-			<div className={cn('text-verde-oscuro mb-4 text-sm font-thin md:text-base', className)}>
+			<div className={cn('text-verde-oscuro mb-4 text-sm font-thin lg:text-base', className)}>
 				{parse(children as string)}
 			</div>
 		)
 
-	return <p className={cn('text-verde-oscuro mb-4 text-sm font-thin md:text-base', className)}>{children}</p>
+	return <p className={cn('text-verde-oscuro mb-4 text-sm font-thin lg:text-base', className)}>{children}</p>
 }
 
 const Title = ({ children, className, parseHtml }: TitleProps) => {
@@ -23,13 +23,13 @@ const Title = ({ children, className, parseHtml }: TitleProps) => {
 	if (parseHtml)
 		return (
 			<div
-				className={cn('text-verde-oscuro mb-8 text-base font-thin uppercase lg:text-3xl lg:tracking-wider', className)}>
+				className={cn('text-verde-oscuro mb-4 text-base font-thin uppercase lg:text-3xl lg:tracking-wider', className)}>
 				{parse(children as string)}
 			</div>
 		)
 
 	return (
-		<h3 className={cn('text-verde-oscuro mb-8 text-base font-thin uppercase lg:text-3xl lg:tracking-wider', className)}>
+		<h3 className={cn('text-verde-oscuro mb-4 text-base font-thin uppercase lg:text-3xl lg:tracking-wider', className)}>
 			{children}
 		</h3>
 	)
