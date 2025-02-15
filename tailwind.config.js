@@ -1,22 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-	darkMode: "class",
+	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {
-				gris: "#F7F7F7",
+				gris: '#F8EEDF',
+				'verde-oscuro': '#003B33',
+				'verde-claro': '#345545',
+				mostaza: '#FFAE58',
 			},
 			fontFamily: {
-				itc: ["ITC Berkeley Oldstyle Std", "sans-serif"],
+				america: ['GT America', 'sans-serif'],
 			},
 			maxWidth: {
-				app: "1520px",
-				section: "1320px",
+				section: '1440px',
 			},
 		},
 	},
 	daisyui: {
-		themes: ["cupcake"],
+		themes: ['cupcake'],
 	},
-};
+}
