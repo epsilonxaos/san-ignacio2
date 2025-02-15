@@ -13,7 +13,7 @@ const SectionContainer = ({ children, className, id, borderTop, borderBottom }: 
 		<>
 			{borderTop && (
 				<Section>
-					<hr className='border-t-verde-oscuro border-t-[3px]' />
+					<hr className='border-t-[3px] border-t-verde-oscuro' />
 				</Section>
 			)}
 
@@ -25,7 +25,7 @@ const SectionContainer = ({ children, className, id, borderTop, borderBottom }: 
 
 			{borderBottom && (
 				<Section>
-					<hr className='border-t-verde-oscuro border-t-[3px]' />
+					<hr className='border-t-[3px] border-t-verde-oscuro' />
 				</Section>
 			)}
 		</>
@@ -36,7 +36,7 @@ const Section = ({ children, className, id }: TSectionContainer) => {
 	return (
 		<section
 			{...(id && { id })}
-			className={cn('mx-auto max-w-section px-8 lg:px-20', className)}>
+			className={cn('mx-auto max-w-section px-8 lg:px-14 xl:px-20', className)}>
 			{children}
 		</section>
 	)

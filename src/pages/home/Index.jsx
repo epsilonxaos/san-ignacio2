@@ -1,4 +1,3 @@
-import About from '@pages/About'
 import Banner from '@pages/home/Banner'
 import Contact from '@pages/home/Contact'
 import Croquis from '@pages/home/Croquis'

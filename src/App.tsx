@@ -1,6 +1,5 @@
 import AppContext from '@contexts/AppContext'
 import Footer from '@modules/Footer'
-import Header from '@modules/Header'
 import Routes from '@routes/Routes'
 import { Toaster } from 'sonner'
 
@@ -17,7 +16,6 @@ function App() {
 	return (
 		<AppContext.Provider value={{ state, dispatch }}>
 			<Toaster />
-			<Header />
 
 			<Routes />
 
