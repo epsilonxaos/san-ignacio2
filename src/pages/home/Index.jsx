@@ -1,11 +1,10 @@
 import About from '@pages/About'
+import Banner from '@pages/home/Banner'
 
 const Index = () => {
 	return (
 		<div>
-			<p>Hola mundo maldito</p>
-
-			<About />
+			<Banner />
 		</div>
 	)
 }
