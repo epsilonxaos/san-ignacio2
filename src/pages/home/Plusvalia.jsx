@@ -1,13 +1,16 @@
-import Img from '@assets/img/placeholder.jpg'
+import Img2 from '@assets/img/comercial.jpg'
+import Img4 from '@assets/img/industrial.jpg'
+import Img1 from '@assets/img/residencial.jpg'
+import Img3 from '@assets/img/turistico.jpg'
 import SectionContainer from '@components/SectionContainer'
 import Text from '@components/Text'
 
 const Plusvalia = () => {
 	const cards = [
-		{ title: 'Residencial', description: 'Privadas exclusivas o fraccionamientos premium.', img: Img },
-		{ title: 'Comercial', description: 'Plazas, centros de conveniencia o usos mixtos.', img: Img },
-		{ title: 'Industrial', description: 'Almacenes y centros logísticos.', img: Img },
-		{ title: 'Turistico', description: 'Villas, eco-desarrollos o proyectos sustentables.', img: Img },
+		{ title: 'Residencial', description: 'Privadas exclusivas o fraccionamientos premium.', img: Img1 },
+		{ title: 'Comercial', description: 'Plazas, centros de conveniencia o usos mixtos.', img: Img2 },
+		{ title: 'Industrial', description: 'Almacenes y centros logísticos.', img: Img4 },
+		{ title: 'Turistico', description: 'Villas, eco-desarrollos o proyectos sustentables.', img: Img3 },
 	]
 
 	return (

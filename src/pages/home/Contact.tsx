@@ -1,4 +1,5 @@
-import Img from '@assets/img/placeholder.jpg'
+import Img from '@assets/img/contacto.jpg'
+import svgIsotipo from '@assets/img/isotipo.svg'
 import Button from '@components/Button'
 import SectionContainer from '@components/SectionContainer'
 import Text from '@components/Text'
@@ -34,11 +35,19 @@ const Contact = () => {
 				</div>
 
 				<div className='col-span-1'>
-					<img
-						src={Img}
-						alt='Imagen de contacto'
-						className='aspect-square h-full min-h-[230px] w-full border-[3px] border-verde-oscuro object-cover object-center lg:aspect-auto xl:min-h-[750px]'
-					/>
+					<div className='relative h-full'>
+						<img
+							src={Img}
+							alt='Imagen de contacto'
+							className='aspect-square h-full min-h-[230px] w-full border-[3px] border-verde-oscuro object-cover object-center lg:aspect-auto xl:min-h-[750px]'
+						/>
+
+						<img
+							src={svgIsotipo}
+							alt='Isotipo'
+							className='absolute inset-0 m-auto w-[38px] lg:w-[90px]'
+						/>
+					</div>
 				</div>
 			</div>
 		</SectionContainer>

@@ -1,5 +1,6 @@
 import svgCalle from '@assets/img/calle.svg'
-import Img from '@assets/img/placeholder.jpg'
+import svgIsotipo from '@assets/img/isotipo-verde.svg'
+import Img from '@assets/img/mar.jpg'
 import svgProyecto from '@assets/img/proyecto.svg'
 import svgRayo from '@assets/img/rayo.svg'
 import SectionContainer from '@components/SectionContainer'
@@ -36,6 +37,11 @@ const Location = () => {
 			className='py-10 md:py-14'>
 			<div className='grid gap-6 md:grid-cols-2 xl:grid-cols-3'>
 				<div className='col-span-1 md:px-8'>
+					<img
+						src={svgIsotipo}
+						alt='Isotipo'
+						className='mb-6 w-[40px]'
+					/>
 					<Text.Title>Ubicado en una de las zonas con mayor crecimiento en la península de Yucatán.</Text.Title>
 
 					<Text>
@@ -43,7 +49,7 @@ const Location = () => {
 						con alta demanda inmobiliaria para desarrollos residenciales y comerciales.
 					</Text>
 					<Text className={'mb-0 font-normal'}>El crecimiento en la zona ha impulsado:</Text>
-					<ul className='text-verde-oscuro mb-6 ml-2 list-disc pl-5'>
+					<ul className='mb-6 ml-2 list-disc pl-5 text-verde-oscuro'>
 						<li>
 							<Text className={'mb-0'}>Incremento en la plusvalía de terrenos.</Text>
 						</li>
@@ -60,7 +66,7 @@ const Location = () => {
 				</div>
 				<div className='col-span-1 xl:col-span-2'>
 					<img
-						className='border-verde-oscuro aspect-square h-full min-h-[230px] w-full border-[3px] object-cover object-center lg:aspect-auto'
+						className='aspect-square h-full min-h-[230px] w-full border-[3px] border-verde-oscuro object-cover object-center lg:aspect-auto'
 						src={Img}
 						alt='Imagen cercania mar'
 					/>
