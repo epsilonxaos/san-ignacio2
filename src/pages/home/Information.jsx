@@ -34,7 +34,7 @@ const Location = () => {
 		<SectionContainer
 			borderBottom
 			className='py-10 md:py-14'>
-			<div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
+			<div className='grid gap-6 md:grid-cols-2 xl:grid-cols-3'>
 				<div className='col-span-1 md:px-8'>
 					<Text.Title>Ubicado en una de las zonas con mayor crecimiento en la península de Yucatán.</Text.Title>
 
@@ -58,7 +58,7 @@ const Location = () => {
 						Contamos con referencias de proyectos exitosos en la zona, respaldando el potencial de esta inversión.
 					</Text>
 				</div>
-				<div className='col-span-1 lg:col-span-2'>
+				<div className='col-span-1 xl:col-span-2'>
 					<img
 						className='border-verde-oscuro aspect-square h-full min-h-[230px] w-full border-[3px] object-cover object-center lg:aspect-auto'
 						src={Img}

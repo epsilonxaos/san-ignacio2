@@ -36,7 +36,7 @@ const Section = ({ children, className, id }: TSectionContainer) => {
 	return (
 		<section
 			{...(id && { id })}
-			className={cn('max-w-section px-8 lg:px-20', className)}>
+			className={cn('mx-auto max-w-section px-8 lg:px-20', className)}>
 			{children}
 		</section>
 	)
