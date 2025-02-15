@@ -8,7 +8,10 @@ const Button = ({ children, onClick, type, className }: TButtonParams) => {
 	return (
 		<button
 			type={type ?? 'button'}
-			className={cn('bg-azulRey font-apercuPro px-5 py-4 text-xs uppercase tracking-[1.2px] text-white', className)}
+			className={cn(
+				'bg-mostaza font-america text-verde-oscuro min-w-[100px] p-4 text-[10px] font-normal uppercase tracking-wider md:text-xs',
+				className
+			)}
 			onClick={onClick}>
 			{children}
 		</button>
@@ -21,7 +24,10 @@ const Url = ({ children, href, className }: TButtonParams & { href: string }) =>
 			href={href}
 			target='_blank'
 			rel='noopener noreferrer'
-			className={cn('bg-azulRey font-apercuPro px-5 py-4 text-xs uppercase tracking-[1.2px] text-white', className)}>
+			className={cn(
+				'bg-mostaza font-america text-verde-oscuro min-w-[100px] p-4 text-[10px] font-normal uppercase tracking-wider md:text-xs',
+				className
+			)}>
 			{children}
 		</a>
 	)
@@ -31,7 +37,10 @@ const Navigation = ({ to, children, onClick, className }: TButtonParams & { to: 
 	return (
 		<Link
 			to={to}
-			className={cn('bg-azulRey font-apercuPro px-5 py-4 text-xs uppercase tracking-[1.2px] text-white', className)}
+			className={cn(
+				'bg-mostaza font-america text-verde-oscuro min-w-[100px] p-4 text-[10px] font-normal uppercase tracking-wider md:text-xs',
+				className
+			)}
 			onClick={onClick}>
 			{children}
 		</Link>
